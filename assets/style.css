@@ -1,0 +1,68 @@
+:root {
+    --color_header: whitesmoke;
+    --color_title: black;
+    --size_title: 2rem;
+    --size_date: 1.2rem;
+    --size_position: 1.5rem;
+    --size_company: 1.3rem;
+}
+
+body {
+    margin: 5rem 10rem;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: "header header"
+    "aside main";
+
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    grid-area: header; 
+}
+
+#profile_picture {
+    height: 300px
+}
+
+#name {
+    font-size: 5rem;
+    color: var(--color_header)
+}
+
+#profession {
+    font-size: 3rem;
+    color: var(--color_header)
+}
+
+h3 {
+    color: var(--color_title);
+    font-size: var(--size_title);
+}
+
+main {
+    padding: 2rem;
+    grid-area: main;
+}
+
+.date {
+    font-size: var(--size_date);
+}
+
+.position {
+    font-size: var(--size_position);
+}
+
+.company {
+    font-size: var(--size_company);
+}
+
+aside {
+    padding: 2rem;
+    grid-area: aside;
+}
